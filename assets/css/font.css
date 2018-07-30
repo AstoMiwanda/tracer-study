@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+@font-face{
+	font-family: 'SegoeUI-regular';
+	src: url('../fonts/segoeui.ttf');
+}
+@font-face{
+	font-family: 'SegoeUI-italic';
+	src: url('../fonts/segoeuii.ttf');
+}
+@font-face{
+	font-family: 'SegoeUI-semibold';
+	src: url('../fonts/seguisb.ttf');
+}
+@font-face{
+	font-family: 'SegoeUI-bold';
+	src: url('../fonts/segoeuib.ttf');
+}
+@font-face{
+	font-family: 'Lato-regular';
+	src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face{
+	font-family: 'Lato-bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face{
+	font-family: 'Raleway-regular';
+	src: url('../fonts/Raleway-Regular.ttf');
+}
+@font-face{
+	font-family: 'Raleway-semibold';
+	src: url('../fonts/Raleway-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'Raleway-bold';
+	src: url('../fonts/Raleway-Bold.ttf');
+}

@@ -1,0 +1,450 @@
+@charset 'UTF-8';
+body{
+	width: 100%;
+	margin: 0;	
+}
+
+.containers{
+	width: 83.3333%;
+	margin: auto;
+}
+
+/*button*/
+.btn{
+	width: 140px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 5px;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: 'Lato-bold';
+	font-size: 10pt;
+	color: #fff;
+	border: none;
+}
+.btn:hover{
+	cursor: pointer;
+	opacity: .8;
+}
+.btn-uploadExcel{
+	background-color: #27ba24;
+}
+.btn-tambah{
+	background-color: #337fcc;
+}
+.btn-downloadExcel{
+	background-color: #27ba24;
+}
+.btn-simpan{
+	background-color: #e53438;
+	float: right;
+}
+.flex, .flex-vcenter, .flex-hcenter, .flex-center, .flex-spaceBetween, .flex-Column{
+	display: flex;
+}
+.flex-vcenter{
+	align-items: center;
+}
+.flex-hcenter{
+	justify-content: center;
+}
+.flex-spaceBetween{
+	justify-content: space-between;
+}
+.flex-Column{
+	flex-direction: column;
+}
+.clear{
+	clear: both;
+	float: none;
+	flex: none;
+}
+
+/*Data ALumni, Data Berita, Data User*/
+#konten{
+	width: 100%;
+	margin: 0;
+}
+#konten h1{
+	font-weight: normal;
+	font-family: 'Raleway-bold';
+	font-size: 20pt;
+	color: #222;
+	text-align: center;
+	margin: 50px auto 80px auto;
+}
+#konten h2{
+	font-weight: normal;
+	font-family: 'SegoeUI-regular';
+	font-size: 12pt;
+	color: #222;
+	margin: 0;
+}
+#konten h3{
+	font-weight: normal;
+	font-family: 'SegoeUI-regular';
+	font-size: 12pt;
+	color: #222;
+	margin: 0 20px;
+}
+#konten .data-menu, .data-submenu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#konten .form-filter, .form-cari{
+	padding: 5px 10px;
+	border: 1px solid #444;
+	border-radius: 5px;
+	font-family: 'SegoeUI-regular';
+	font-size: 10pt;
+	color: #444;
+}
+#konten .cari-alumni{
+	display: flex;
+	align-items: center;
+	border: 1px solid #444;
+	border-radius: 5px;
+	width: 100%;
+	padding-right: 10px;
+}
+#konten .form-cari{
+	border: none;
+	outline: none;
+	width: 80%;
+}
+#konten .img-cari{
+	width: 15px;
+	height: 16px;
+	background-image: url(../img/cari.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: none;
+	background-color: #fff;
+}
+#konten .img-cari:hover{
+	cursor: pointer;
+}
+#konten .data-menukiri, .data-menukanan{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#konten .data-menukiri{
+	width: 60%;
+}
+#konten .data-menukanan{
+	width: 27%;
+}
+#konten .data-alumni{
+	margin-top: 25px;
+	margin-bottom: 50px;
+	width: calc(100% - 100px);
+	padding: 0 50px 25px 50px;
+	border: 1px solid #444;
+	border-radius: 5px;
+}
+#konten .header-alumni, .header-form{
+	width: calc(100% + 100px);
+	margin-left: -50px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Raleway-bold';
+	font-size: 12pt;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #e53438;
+}
+#konten .table-alumni{
+	width: 100%;
+}
+#konten .table-alumni td, .table-alumni th{
+	text-align: center;
+	padding: 5px 0;
+	font-size: 10pt;
+	color: #000;
+}
+#konten .table-alumni{
+	margin: 25px 0;
+
+}
+#konten .table-alumni th{
+	font-family: 'SegoeUI-bold';
+
+}
+#konten .table-alumni td{
+	font-family: 'SegoeUI-regular';
+
+}
+
+
+/*Edit Alumni*/
+#bg-form{
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../img/bg-form.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#bg-form .bg-form{
+	width: 100%;
+	margin: 0;
+}
+#bg-form h1{
+	font-weight: normal;
+	font-family: 'Raleway-bold';
+	font-size: 20pt;
+	color: #222;
+	text-align: center;
+	margin: 50px auto 10px auto;
+}
+#bg-form h2{
+	font-weight: normal;
+	font-family: 'SegoeUI-regular'; 
+	font-size: 12pt;
+	color: #444;
+	text-align: center;
+	margin: 0;
+}
+#bg-form .form-alumni{
+	margin: 50px auto;
+	width: 600px;
+	padding: 45px 0;
+	border-radius: 3px;
+	background-color: #ffffff;
+	box-shadow: 0 3px 20px 2px rgba(0,0,0,.2);
+}
+#bg-form .form-alumni table{
+	width: 70%;
+	margin: auto;
+}
+#bg-form .form-alumni table td{
+	font-family: 'SegoeUI-regular';
+	font-size: 10pt;
+	color: #000;
+}
+#bg-form .form-text-alumni, .form-textarea-alumni{
+	padding: 8px 15px;
+	width: 90%;
+	margin: 8px 0;
+	font-family: 'SegoeUI-regular';
+	font-size: 10pt;
+	color: #444;
+	border: 1px solid #222;
+	border-radius: 3px;
+}
+
+
+/*Kontak Kami*/
+#kontak-kami{
+	width: 100%;
+	margin: 0;
+}
+#kontak-kami h1{
+	font-weight: normal;
+	font-family: 'Raleway-bold';
+	font-size: 20pt;
+	color: #222;
+	text-align: center;
+	margin: 50px auto 80px auto;
+}
+#kontak-kami .kontak-kami{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+#kontak-kami .testimonial{
+	width: 300px;
+	padding: 30px 25px;
+	border-radius: 3px;
+	box-shadow: 0 3px 20px 2px rgba(0,0,0,.2);
+}
+#kontak-kami .profile-img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+#kontak-kami .img-profile{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+#kontak-kami .profile-id{
+	margin-left: 20px;
+}
+#kontak-kami .profile-name{
+	font-family: 'SegoeUI-bold';
+	font-size: 14pt;
+	color: #222;
+	font-weight: normal;
+	margin: 0;
+}
+#kontak-kami .profile-ket{
+	font-family: 'SegoeUI-regular';
+	font-size: 12pt;
+	color: #444444;
+	font-weight: normal;
+	margin: 0;
+}
+#kontak-kami .profile-testimonial{
+	font-family: 'SegoeUI-italic';
+	font-size: 12pt;
+	color: #444444;
+	line-height: 22pt;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 30px;
+}
+#kontak-kami .kontak-info{
+	height: 300px;
+	margin-left: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#kontak-kami .img-kontak{
+	width: 30px;
+}
+#kontak-kami .info-kontak{
+	font-family: 'SegoeUI-semibold';
+	font-size: 12pt;
+	color: #444444;
+	font-weight: normal;
+	margin: 0;
+	margin-left: 20px;
+}
+
+
+/*Login*/
+#login{
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../img/bg-form.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#login h1{
+	font-weight: normal;
+	font-family: 'Raleway-bold';
+	font-size: 20pt;
+	color: #222;
+	text-align: center;
+	margin: 50px auto 10px auto;
+}
+#login h2{
+	font-weight: normal;
+	font-family: 'SegoeUI-regular';
+	font-size: 12pt;
+	color: #222;
+	line-height: 22pt;
+	text-align: center;
+	margin: 0;
+}
+#login .form-login{
+	width: 450px;
+	text-align: center;
+	margin: 40px auto 50px auto;
+	padding: 85px 0;
+	border-radius: 5px;
+	box-shadow: 0 3px 20px 2px rgba(0,0,0,.2);
+	background-color: #ffffff;
+}
+#login .form-text{
+	width: calc(65% - 40px);
+	border: 1px solid #222222;
+	border-radius: 3px;
+	padding: 8px 20px;
+	font-family: 'SegoeUI-regular';
+	font-size: 10pt;
+	line-height: 22pt;
+	color: #444444;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+#login .form-submit{
+	width: 65%;
+	padding: 5px 0;
+	border: none;
+	border-radius: 5px;
+	background-color: #e53438;
+	font-family: 'Lato-bold';
+	font-size: 12pt;
+	color: #ffffff;
+	line-height: 22pt;
+	font-weight: normal;
+	margin: 20px  auto 0 auto;
+}
+#login .form-submit:hover{
+	cursor: pointer;
+	opacity: .8;
+}
+
+
+/*Beranda Admin, Edit Berita*/
+#admin{
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../img/bg-form.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#admin h1{
+	font-weight: normal;
+	font-family: 'Raleway-bold';
+	font-size: 20pt;
+	color: #222;
+	text-align: center;
+	margin: 50px auto 10px auto;
+}
+#admin h2{
+	font-weight: normal;
+	font-family: 'SegoeUI-regular';
+	font-size: 12pt;
+	color: #222;
+	line-height: 22pt;
+	text-align: center;
+	margin: 0;
+}
+#admin .admin{
+	width: 600px;
+	margin: 40px auto 50px auto;
+	padding: 45px 0;
+	border-radius: 5px;
+	box-shadow: 0 3px 20px 2px rgba(0,0,0,.2);
+	background-color: #ffffff;
+}
+#admin .admin table{
+	width: 80%;
+	margin: auto;
+}
+#admin .admin table td{
+	margin: 10px 0;
+}
+#admin .form-text, .form-textarea{
+	padding: 8px 15px;
+	width: 90%;
+	margin: 8px 0;
+	font-family: 'SegoeUI-regular';
+	font-size: 10pt;
+	color: #444;
+	border: 1px solid #222;
+	border-radius: 3px;
+}
+#admin .form-textarea{
+	height: 100px;
+}

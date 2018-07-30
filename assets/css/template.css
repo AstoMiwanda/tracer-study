@@ -1,0 +1,218 @@
+@charset 'UTF-8';
+body{
+	width: 100%;
+	margin: 0;	
+}
+
+.containers{
+	width: 85%;
+	margin: auto;
+}
+
+/*Header*/
+#header{
+	width: 100%;
+	height: 85px;
+	background-color: #f1f1f1;
+}
+#header .header-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 85px;
+}
+#header .logo{
+	width: 300px;
+}
+#header .logo-img{
+	height: 30px;
+}
+#header .title h1{
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	font-family: 'Raleway-bold';
+	font-size: 16pt;
+	color: #222;
+	letter-spacing: 50;
+}
+#header .title h2{
+	margin: 5px 0 0 0;
+	font-weight: normal;
+	text-align: center;
+	font-family: 'Raleway-regular';
+	font-size: 11pt;
+	color: #444;
+	letter-spacing: 50;
+}
+#header .kontak{
+	height: 85px;
+	display: flex;
+	align-items: center;
+}
+#header .mail,.phone{
+	display: flex;
+	align-items: flex-end;
+}
+#header .kontak-img{
+	height: 15px;
+	margin-left: 15px;
+}
+#header .kontak-teks{
+	font-family: 'Lato-regular';
+	font-size: 10pt;
+	color: #444;
+	letter-spacing: 50;
+	margin-left: 10px;
+}
+
+/*Menu*/
+#menu{
+	width: 100%;
+	height: 55px;
+	margin: 0;
+	background-color: #e53438;
+}
+#menu .list-menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 55px;
+}
+#menu .list-menu ul{
+	display: flex;
+	align-items: center;
+}
+#menu .list-menu ul li{
+	list-style-type: none;
+}
+#menu .list-menu ul li a{	
+	font-weight: normal;
+	font-family: 'Lato-regular';
+	font-size: 12pt;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 50;
+}
+#menu .list-menu ul li a:hover{
+	color: #444;
+}
+#menu .line-menu{
+	width: 1px;
+	height: 25px;
+	background-color: #fff;
+	margin: auto 25px;
+}
+
+/*Footer*/
+#footer {
+	width: 100%;
+	overflow: hidden;
+	background-color: #222;
+}
+#footer .footer {
+	width: 80%;
+	padding: 15px 0;
+	margin: auto;
+}
+#footer .img {
+	width: 15px;
+	height: 15px;
+	margin: 0 3px;
+}
+#footer h1 {
+	font-size: 10pt;
+	color: #f1f1f1;
+	font-family: 'SegoeUI-semibold';
+}
+#footer h2 {
+	font-size: 9pt;
+	color: #f1f1f1;
+	font-family: 'SegoeUI-semibold';
+}
+/*Dropdown*/
+.dropbtn {
+	width: 22px;
+	height: 25px;
+	background-image: url('../img/admin.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+	width: 22px;
+	height: 25px;
+	background-image: url('../img/admin-hover.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	margin-top: 18px;
+	background-color: #f9f9f9;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+.show {
+	display: block;
+}
+
+
+/*Modal Box*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 150px;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
