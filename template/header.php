@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://localhost/tracer-study/assets/css/template.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/template.css">
 
 <?php require_once 'excel_reader.php'; ?>
 
@@ -6,7 +6,7 @@
 	<div class="containers">
 		<div class="header-top">
 			<div class="logo">
-				<img src="http://localhost/tracer-study/assets/img/logo.png" class="logo-img">
+				<img src="<?php echo base_url(); ?>assets/img/logo.png" class="logo-img">
 			</div>
 
 			<div class="title">
@@ -16,12 +16,12 @@
 
 			<div class="kontak">
 				<div class="mail">
-					<img src="http://localhost/tracer-study/assets/img/mail.png" class="kontak-img">
+					<img src="<?php echo base_url(); ?>assets/img/mail.png" class="kontak-img">
 					<div class="kontak-teks">smktel.pwt@gmail.com</div>
 				</div>
 
 				<div class="phone">
-					<img src="http://localhost/tracer-study/assets/img/phone.png" class="kontak-img">
+					<img src="<?php echo base_url(); ?>assets/img/phone.png" class="kontak-img">
 					<div class="kontak-teks">029-110-0801</div>
 				</div>
 			</div>

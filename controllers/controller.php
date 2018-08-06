@@ -1,5 +1,6 @@
 <?php
 
+require_once './classes/base_url.php';
 /**
  * 
  */

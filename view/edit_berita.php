@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Edit Berita</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/font.css">
 </head>
 <body>
 

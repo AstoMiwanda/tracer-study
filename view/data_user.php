@@ -5,8 +5,8 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Data User</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" href="http://localhost/tracer-study/assets/css/index.css">
-	<link rel="stylesheet" href="http://localhost/tracer-study/assets/css/font.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/index.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font.css">
 </head>
 <body>
 

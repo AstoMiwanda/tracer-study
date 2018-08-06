@@ -5,8 +5,8 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Kontak Kami</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" href="http://localhost/tracer-study/assets/css/index.css">
-	<link rel="stylesheet" href="http://localhost/tracer-study/assets/css/font.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/index.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 		<div class="testimonial">
 			<div class="flex flex-vcenter">
 				<div class="profile-img">
-					<img src="http://localhost/tracer-study/assets/img/profile-img.jpg" class="img-profile">
+					<img src="<?php echo base_url(); ?>assets/img/profile-img.jpg" class="img-profile">
 				</div>
 
 				<div class="profile-id">
@@ -35,23 +35,23 @@
 
 		<div class="kontak-info">
 			<div class="flex flex-vcenter">
-				<img src="http://localhost/tracer-study/assets/img/phone.png" class="img-kontak">
+				<img src="<?php echo base_url(); ?>assets/img/phone.png" class="img-kontak">
 				<p class="info-kontak">021-219-0801</p>
 			</div>
 			<div class="flex flex-vcenter">
-				<img src="http://localhost/tracer-study/assets/img/call.png" class="img-kontak">
+				<img src="<?php echo base_url(); ?>assets/img/call.png" class="img-kontak">
 				<p class="info-kontak">081326923754</p>
 			</div>
 			<div class="flex flex-vcenter">
-				<img src="http://localhost/tracer-study/assets/img/mail.png" class="img-kontak">
+				<img src="<?php echo base_url(); ?>assets/img/mail.png" class="img-kontak">
 				<p class="info-kontak">astomiwanda08@gmail.com</p>
 			</div>
 			<div class="flex flex-vcenter">
-				<img src="http://localhost/tracer-study/assets/img/address.png" class="img-kontak">
+				<img src="<?php echo base_url(); ?>assets/img/address.png" class="img-kontak">
 				<p class="info-kontak">Jl.D.I.Panjaitan No.128, Purwokerto</p>
 			</div>
 			<div class="flex flex-vcenter">
-				<img src="http://localhost/tracer-study/assets/img/website.png" class="img-kontak">
+				<img src="<?php echo base_url(); ?>assets/img/website.png" class="img-kontak">
 				<p class="info-kontak">www.smktelkom-pwt.sch.co.id</p>
 			</div>
 		</div>
