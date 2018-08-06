@@ -27,8 +27,8 @@ class m_berita extends m_controller
 		self::query("UPDATE `t_berita` SET `judul_berita`='$judul',`penulis_berita`='$penulis',`tanggal_berita`='$penulis',`isi_berita`='$isi' WHERE `id_berita`=$id");
 	}
 
-	public function get_search($cari) {
-		$data = self::query("SELECT * FROM `t_berita` WHERE `id_berita`='$cari' || `judul_berita`='$cari' || `penulis_berita`='$cari' || `tanggal_berita`='$cari' || `isi_berita`='$cari'");
+	public function get_search($limitStart, $limitCount, $cari) {
+		$data = self::query("SELECT * FROM `t_berita` WHERE `id_berita`='$cari' || `judul_berita`='$cari' || `penulis_berita`='$cari' || `tanggal_berita`='$cari' || `isi_berita`='$cari' LIMIT $limitStart,$limitCount");
 		return $data;
 	}
 }

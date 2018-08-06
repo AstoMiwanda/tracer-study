@@ -10,12 +10,7 @@ class data_berita extends controller
 
 		login::ceklogin();
 
-		if(isset($_GET['cari'])){
-			$cari = $_GET['cari'];
-			$data = data_berita::search($cari);
-		}
-
-		$per_laman = 10;
+		$per_laman = 5;
 		if(isset($_GET['per_laman'])) {
 			$per_laman = $_GET['per_laman'];
 		}
@@ -28,12 +23,23 @@ class data_berita extends controller
 		if (mysqli_connect_errno()) {
 			echo "Koneksi Gagal!!";
 		}
-		$query = "SELECT * FROM `t_berita`";
+
+		if (isset($_GET['cari'])) {
+			$cari = $_GET['cari'];
+			$query = "SELECT * FROM `t_berita` WHERE `id_berita`='$cari' || `judul_berita`='$cari' || `penulis_berita`='$cari' || `tanggal_berita`='$cari' || `isi_berita`='$cari'";
+		}else { $query = "SELECT * FROM `t_berita`"; }
+
 		$result = mysqli_query($con, $query) or die(mysql_error());
 		$total_data = mysqli_num_rows($result);
 		$total_laman = ceil($total_data / $per_laman);
 		$awal = ($laman_sekarang - 1) * $per_laman;
-		$data_limit = self::get_limit('t_berita', $awal, $per_laman);
+
+		if(isset($_GET['cari'])){
+			$cari = $_GET['cari'];
+			$data_limit = data_berita::search($awal, $per_laman, $cari);
+		}else{
+			$data_limit = self::get_limit('t_berita', $awal, $per_laman);
+		}
 		self::CreatePagging('data_berita', $data_limit, $total_laman, $laman_sekarang);
 	}
 
@@ -75,8 +81,8 @@ class data_berita extends controller
 		header('Location: ./data_berita');
 	}
 
-	public function search($cari) {
-		$data = m_berita::get_search($cari);
+	public function search($awal, $per_laman, $cari) {
+		$data = m_berita::get_search($awal, $per_laman, $cari);
 		return $data;
 	}
 

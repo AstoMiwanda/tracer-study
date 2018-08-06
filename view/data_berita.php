@@ -32,7 +32,7 @@
 					</form>
 				</div>
 
-				<form action="data_berita" method="GET">
+				<form action="<?php echo base_url(); ?>data_berita" method="GET">
 					<div class="cari-alumni" style="width: 200px;">
 						<input type="text" name="cari" placeholder="Cari data alumni" class="form-cari">
 						<input type="submit" value="" class="img-cari">
@@ -42,7 +42,7 @@
 
 			<div class="data-menukanan">
 				<button id="myBtn" class="btn btn-uploadExcel">Upload Excel</button>
-				<a href="getTambahBerita" class="btn btn-tambah">Tambah Berita</a>
+				<a href="<?php echo base_url(); ?>getTambahBerita" class="btn btn-tambah">Tambah Berita</a>
 			</div>
 		</div>
 
@@ -50,7 +50,7 @@
 			<!-- Modal content -->
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<form name="myForm" id="myForm" onSubmit="return validateForm()" action="./uploadBerita" method="POST" enctype="multipart/form-data">
+				<form name="myForm" id="myForm" onSubmit="return validateForm()" action="<?php echo base_url(); ?>uploadBerita" method="POST" enctype="multipart/form-data">
 					<div class="flex flex-vcenter">
 						<input type="file" id="dataBerita" name="dataBerita" required />
 						<input type="submit" name="submit" value="Import" class="btn btn-tambah" /><br/>
@@ -91,15 +91,19 @@
 				<div class="pagging">
 					<?php
 						if($total_laman > 1) {
-							if($laman_sekarang > 1) { ?>
-								<a href="./data_berita?laman=<?php echo $laman_sekarang - 1 ?>">Sebelumnya</a>
-							<?php } else { ?>
+							if($laman_sekarang > 1) {
+								if (isset($_GET['cari'])) { ?>
+									<a href="<?php echo base_url(); ?>data_berita?cari=<?php echo $_GET['cari']; ?>&laman=<?php echo $laman_sekarang - 1 ?>">Sebelumnya</a>
+								<?php }
+							} else { ?>
 								Sebelumnya
 							<?php }
 
-							if($laman_sekarang < $total_laman) { ?>
-								<a href="./data_berita?laman=<?php echo $laman_sekarang + 1 ?>">Selanjutnya</a>
-							<?php } else { ?>
+							if($laman_sekarang < $total_laman) {
+								if (isset($_GET['cari'])) { ?>
+									<a href="<?php echo base_url(); ?>data_berita?cari=<?php echo $_GET['cari']; ?>&laman=<?php echo $laman_sekarang + 1 ?>">Selanjutnya</a>
+								<?php }
+							} else { ?>
 								Selanjutnya
 							<?php }
 						}
